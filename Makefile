@@ -94,7 +94,7 @@ IMPLS = ada ada.2 awk bash basic bbc-basic c chuck clojure coffee common-lisp cp
 	guile haskell haxe hy io java js jq julia kotlin livescript logo lua make mal \
 	matlab miniMAL nasm nim objc objpascal ocaml perl perl6 php picolisp pike plpgsql \
 	plsql powershell ps python python.2 r racket rexx rpython ruby rust scala scheme skew \
-	swift swift3 swift4 swift5 tcl ts vala vb vhdl vimscript wasm wren yorick xslt zig
+	swift swift3 swift4 swift5 tcl ts vala vb vhdl vimscript wasm wren yorick xslt zig go2
 
 EXTENSION = .mal
 
@@ -211,6 +211,7 @@ fantom_STEP_TO_PROG =        impls/fantom/lib/fan/$($(1)).pod
 forth_STEP_TO_PROG =         impls/forth/$($(1)).fs
 fsharp_STEP_TO_PROG =        impls/fsharp/$($(1)).exe
 go_STEP_TO_PROG =            impls/go/$($(1))
+go2_STEP_TO_PROG =           impls/go2/$($(1))
 groovy_STEP_TO_PROG =        impls/groovy/$($(1)).groovy
 gnu-smalltalk_STEP_TO_PROG = impls/gnu-smalltalk/$($(1)).st
 guile_STEP_TO_PROG =         impls/guile/$($(1)).scm
