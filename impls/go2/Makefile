@@ -29,8 +29,13 @@
 
 # $(foreach b,$(BINS),$(eval $(call dep_template,$(b))))
 
-step0_repl: step0_repl.go
-	go build step0_repl.go
+SRCS0 = readline/readline.go
+SRCS1 = reader/reader.go
+step0_repl: step0/step0_repl.go $(SRCS0)
+	go build step0/step0_repl.go
+
+step1_read_print: step1/step1_read_print.go $(SRCS0) $(SRCS1)
+	go build step1/step1_read_print.go
 
 clean:
 	rm -f $(BINS) mal
